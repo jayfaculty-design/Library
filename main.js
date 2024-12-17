@@ -72,6 +72,7 @@ function renderBook(book) {
 
   booksContainer.className = "book-card"; // add class for styling
   deleteContainer.className = "delete";
+  mainContainer.className = "main-container";
 
   deleteBtn.src = "images/trash-alt.svg";
   deleteBtn.style.width = "20px";
@@ -84,12 +85,9 @@ function renderBook(book) {
   });
 
   titleC.textContent = book.title || "No Title";
-  authorC.textContent = book.author || "No author";
+  authorC.textContent = `by ${book.author || "No author"}`;
   pagesC.textContent = `${book.pages || 0} pages`;
   hasReadC.textContent = `${book.hasRead ? "Has Read" : "Not Read"} `;
-
-  mainContainer.style.cssText =
-    "display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap;";
 
   booksContainer.append(deleteContainer, titleC, authorC, pagesC, hasReadC);
   mainContainer.appendChild(booksContainer);
