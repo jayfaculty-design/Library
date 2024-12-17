@@ -19,9 +19,8 @@ A simple web-based library application that allows users to manage a collection 
 
 ## Demo
 
-🚀 Check out the live version of the app: [Library App Demo](#)
+🚀 Check out the live version of the app: [Library App Demo](https://jay-library.vercel.app/)
 
-*(Replace the `#` with your live deployment URL if available.)*
 
 ---
 
