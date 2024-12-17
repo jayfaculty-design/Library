@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: aliceblue;
+    transition: all 0.3s ease-in-out;
+}
+button {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    background: white;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    align-items: center;
+}
+.top-container > h2 {
+    font-weight: 700;
+    font-size: 34px;
+    transition: all 0.3s ease-in-out;
+}
+.top-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.top-container button:hover {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+html {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+form button {
+    width: fit-content;
+    
+}
+form > input[type='text'] {
+    width: 100%;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(211, 204, 194);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+form > input[type='number'] {
+    width: 100%;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(211, 204, 194);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+form > label {
+    color: rgb(57, 46, 31);
+    font-weight: 700;
+}
+form .checkbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+form #add-book {
+    position: relative;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    border: 1px solid rgb(144, 119, 86);
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+form #add-book:hover {
+    background-color: rgb(144, 119, 86);
+    border: 1px solid white;
+}
+.side-bar {
+    background-color: white;
+    width: 200px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    padding: 30px;
+    height: 100vh;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    left: -999px;
+    transition: all 0.3s ease-in-out;
+}
+.side-bar #close-form {
+    width: fit-content;
+    font-weight: bold;
+    border: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: antiquewhite;
+}
+#close-form:hover {
+    background-color: aliceblue;
+}
+
+.book-card {
+    border: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 15px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-bottom: 50px;
+}
+.book-card img {
+    cursor: pointer;
+}
+
+.book-card .delete {
+    border: 1px solid aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: fit-content;
+    background-color: rgb(210, 233, 253);
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+
+}
+a {
+    text-decoration: none;
+}
+.top-container > div {
+    display: flex;
+    gap: 15px;
+}
+.top-container > div > a {
+    font-size: 20px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.top-container > div > a:hover {
+    transform: scale(1.2);
+}
