@@ -31,11 +31,11 @@ function Book(title, author, pages, hasRead) {
 }
 addBtn.addEventListener("click", () => {
   sideBar.style.left = "0px";
-  topContainer.style.paddingLeft = "300px";
+  // topContainer.style.paddingLeft = "300px";
 });
 closeBtn.addEventListener("click", () => {
   sideBar.style.left = "-999px";
-  topContainer.style.paddingLeft = "50px";
+  // topContainer.style.paddingLeft = "50px";
 });
 
 addBook.addEventListener("click", () => {
