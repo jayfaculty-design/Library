@@ -108,7 +108,7 @@ form #add-book:hover {
     inset: 0;
     z-index: 999;
     padding: 30px;
-    height: 100vh;
+    height: 100%;
     box-shadow: 0 3px 10px rgb(0,0,0,0.2);
     left: -999px;
     transition: all 0.3s ease-in-out;
